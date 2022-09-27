@@ -16,7 +16,7 @@ nav {
     color: white;
 }
 .title{
-    color:white;
+    color:rgba(0,175,239,255);
 
 }
 .links a{
@@ -27,12 +27,15 @@ nav {
     background:rgba(0,175,239,255);  /*--ECD blue --*/
     color: black;
 }
-header img {
+header{
     display: flex;
     width: auto;
     height: auto;
     margin: 0 auto;
-    border: 2px solid black;
+}
+header img{
+    width: 100%;
+    margin: 0 auto;
 }
 
 /*--.grid-item{

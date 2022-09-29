@@ -8,24 +8,27 @@ body{
     padding: 0;
     background: gray;
 }
-nav {
+.main-nav {
     background: black;
-    padding: 1em 2em;
+    padding: .5em .5em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
 .title{
-    color:rgba(0,175,239,255);
-
+    display: flex;
+    align-items: center;
+}
+.title img {
+    height: 60px;
 }
 .links a{
     color:white;
+    transition: color 0.5s ease-in-out ;
 }
-
 .links a:hover {
-    background:rgba(0,175,239,255);  /*--ECD blue --*/
-    color: black;
+    color: rgba(0,175,239,255); /*--ECD blue --*/
 }
 header{
     display: flex;
@@ -37,43 +40,63 @@ header img{
     width: 100%;
     margin: 0 auto;
 }
-
-/*--.grid-item{
-    display: inline-block;
-    margin: auto;
-    width: auto;
+/*--section {
+    display: grid;
+    grid-gap: 3.2rem;
+    margin: 3rem auto;
 }
-.grid-item img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+section.product {
+    grid-template-columns: 1fr;
 }
-.column {
-    float: left;
-    width: 33.33%;
-    text-align: center;
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-div h1 {
-    display: block;
-    margin-right: auto;
-
+h1 {
+    color: rgba(0,175,239,255);--*/ /*--ECD blue --*/ /*--
+    align-self: flex-start;
 }
-div img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.content-outer{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-div p {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.content-inner{
+    max-width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 --*/
+h2 {
+    color: rgba(0,175,239,255); /*--ECD blue --*/ 
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 1rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 3px dashed white;
+    padding: 0.5rem;
+}
+.grid img {
+    margin-top: 1px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+/*-- Media Queries --*/
+@media screen and (min-width: 550px) {
+    .grid-container{grid-template-columns: repeat(2, 1fr);}
+  }
+  @media screen and (min-width: 768px) {
+    .grid-container{grid-template-columns: repeat(3, 1fr);}
+  }
+

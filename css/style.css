@@ -80,6 +80,20 @@ h1 {
     flex-direction: column;
     text-align: center;
     color: white;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0,175,239,255);/*--ECD blue --*/
+    border: none;
+    border-radius: 10rem;
+    padding: .5rem 2rem .5rem 2rem;  
+    width: 50%;
+    transition: translate(-50%, -50%);
+}
+.btn:hover{
+    background-color: lightskyblue;
 }
 h2 {
     color: rgba(0,175,239,255); /*--ECD blue --*/ 

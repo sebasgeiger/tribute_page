@@ -81,6 +81,7 @@ h1 {
     text-align: center;
     color: white;
     align-items: center;
+    font-family:'Courier New', Courier, monospace;
 }
 .btn{
     cursor: pointer;
@@ -98,6 +99,7 @@ h1 {
 h2 {
     color: rgba(0,175,239,255); /*--ECD blue --*/ 
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
 }
 .grid {
     display: grid;
@@ -159,7 +161,5 @@ footer{
     padding:.5rem;
 }
 
-
-  
 
 

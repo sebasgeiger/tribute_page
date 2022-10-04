@@ -149,13 +149,14 @@ footer{
     padding: 1px;
     border-top: 2px solid white;
 }
-.cs{
+.cr{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 .icons{
     display: flex;
     align-items: center;
+    padding:.5rem;
 }
 
 
